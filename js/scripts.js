@@ -10,3 +10,13 @@ var imageUrls = [
  'assets/ohrid.jpg',
  'assets/skopje.jpg,
 ];
+
+var img = document.getElementById('the-image-to-change');
+img.addEventListener("click", function() {
+    this.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+});
+
+img = $('#the-image-to-change');
+img.on('click', function() {
+    this.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+});
